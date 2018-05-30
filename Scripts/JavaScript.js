@@ -20,6 +20,8 @@ function makeTalk() {
 
     var myVar = setInterval(flipIt, 100);
 
+    alert(closed.src);
+
     function flipIt() {
             if (closed.src == "http://localhost:51975/Images/MonkSamuel.png") {
                 closed.src = "Images/MonkSamuel2.png";

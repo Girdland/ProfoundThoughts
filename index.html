@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<script type="text/javascript" src="Scripts/JavaScript.js"></script>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css" media="screen" />
+    <meta charset="utf-8" />
+    <title>Mindblown Below Average</title>
+</head>
+<body background="Images/sunset.jpg" style="background-repeat: no-repeat; background-size: cover;">
+   <div class="text" id="text">
+        <p id="quote">
+
+        </p>
+    </div>
+    <div class="button">
+        <input class="theButton" type="image" src="Images/MonkSamuel.png" onclick="makeQuote(); playSound(); makeTalk(); showBubble();" id="closed" />
+    <!--    <img class="theButton" src="Images/MonkSamuel2.png" id="open"/> -->
+    </div>
+    <audio id="audio">
+        <source src="Audio/talk.mp3" type="audio/mpeg" />
+        <p>Your browser does not support the audio element</p>
+    </audio>
+</body>
+</html>

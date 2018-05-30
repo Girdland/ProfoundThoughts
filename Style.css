@@ -1,0 +1,60 @@
+﻿body {
+}
+
+.button {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input[type="image"]:focus {
+    outline: 0;
+}
+
+@font-face {
+    font-family: annie-use-your-telescope;
+    src: url(AnnieUseYourTelescope.ttf);
+}
+
+#open {
+    visibility: hidden;
+}
+
+#closed {
+
+}
+
+#quote {
+    width: 500px;
+    padding-left: 100px;
+    font-size: 60px;
+}
+
+#text {
+    top: 30%;
+    background-image: url("Images/SpeechBubble.png");
+    background-position: center;
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+    visibility: hidden;
+}
+
+.text {
+    font-size: 70px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: annie-use-your-telescope;
+}
+
+.test {
+    font-size: 100px;
+}

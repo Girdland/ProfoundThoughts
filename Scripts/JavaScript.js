@@ -20,21 +20,19 @@ function makeTalk() {
 
     var myVar = setInterval(flipIt, 100);
 
-    alert(closed.src);
-
     function flipIt() {
-            if (closed.src == "http://localhost:51975/Images/MonkSamuel.png") {
+        if (closed.src == "https://girdland.github.io/ProfoundThoughts/Images/MonkSamuel.png") {
                 closed.src = "Images/MonkSamuel2.png";
             }
 
             else {
-                document.getElementById("closed").src = "http://localhost:51975/Images/MonkSamuel.png";
+            document.getElementById("closed").src = "https://girdland.github.io/ProfoundThoughts/Images/MonkSamuel.png";
             }
     }
 
     setTimeout(function () {
         clearInterval(myVar);
-        document.getElementById("closed").src = "http://localhost:51975/Images/MonkSamuel.png";
+        document.getElementById("closed").src = "https://girdland.github.io/ProfoundThoughts/Images/MonkSamuel.png";
     }, 2000);
 }
 

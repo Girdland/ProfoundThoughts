@@ -1,5 +1,5 @@
 ﻿function makeQuote() {
-    var quotes = ["Teskeden är den lillaste av skedar"];
+    var quotes = ["Teskeden är den lillaste av skedar", "[Skä:men ä: inte ska:p!]"];
 
     var random = Math.floor((Math.random() * quotes.length) + 0);
 

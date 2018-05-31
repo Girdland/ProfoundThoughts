@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Audio",
-    "\\Images"
+    "\\Images",
+    "\\Scripts"
   ],
-  "SelectedNode": "\\JavaScript.js",
+  "SelectedNode": "\\Scripts\\JavaScript.js",
   "PreviewInSolutionExplorer": false
 }

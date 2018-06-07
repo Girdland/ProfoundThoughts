@@ -1,7 +1,16 @@
 ﻿function makeQuote() {
     var quotes = ["Teskeden är den lillaste av skedar", "Skä:men ä: inte ska:p!", "Man kan sitta på innangården", "Söf and töf", "Det är klart efter lunch"];
+    var lastQuote = document.getElementById("quote").innerHTML;
 
-    var random = Math.floor((Math.random() * quotes.length) + 0);
+
+    var random = 0;
+
+    for (var x = 0; x < 50; x++) {    
+        random = Math.floor((Math.random() * quotes.length) + 0);
+        if (lastQuote != quotes[random]) {
+            break;
+        }
+    }
 
     document.getElementById("quote").innerHTML = quotes[random];
 }

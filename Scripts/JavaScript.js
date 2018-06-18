@@ -1,11 +1,18 @@
 ﻿function makeQuote() {
-    var quotes = ["Teskeden är den lillaste av skedar", "Skä:men ä: inte ska:p!", "Man kan sitta på innangården", "Söf and töf", "Det är klart efter lunch"];
+    var quotes = [
+        "Teskeden är den lillaste av skedar",
+        "Skä:men ä: inte ska:p!",
+        "Man kan sitta på innangården",
+        "Söf and töf",
+        "Det är klart efter lunch",
+        "50% av människor är dummare än genomsnittet"
+    ];
     var lastQuote = document.getElementById("quote").innerHTML;
 
 
     var random = 0;
 
-    for (var x = 0; x < 50; x++) {    
+    for (var x = 0; x < 50; x++) {
         random = Math.floor((Math.random() * quotes.length) + 0);
         if (lastQuote != quotes[random]) {
             break;
@@ -31,12 +38,10 @@ function makeTalk() {
 
     function flipIt() {
         if (closed.src == "https://girdland.github.io/ProfoundThoughts/Images/MonkSamuel.png") {
-                closed.src = "Images/MonkSamuel2.png";
-            }
-
-            else {
+            closed.src = "Images/MonkSamuel2.png";
+        } else {
             document.getElementById("closed").src = "https://girdland.github.io/ProfoundThoughts/Images/MonkSamuel.png";
-            }
+        }
     }
 
     setTimeout(function () {
@@ -48,6 +53,5 @@ function makeTalk() {
 function showBubble() {
     var bubble = document.getElementById("text");
 
-    document.getElementById('text').setAttribute('style', 'visibility: visible')
-
+    bubble.setAttribute('style', 'visibility: visible')
 }
